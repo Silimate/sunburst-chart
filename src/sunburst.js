@@ -375,14 +375,14 @@ export default Kapsule({
     }
 
     function angularTextFits(d) {
-      return measureTextWidth(nameOf(d.data).toString(), TEXT_FONTSIZE, { strokeWidth: TEXT_STROKE_WIDTH }) < getAvailableLabelAngularSpace(d);
+      return measureTextWidth(nameOf(d.data), TEXT_FONTSIZE, { strokeWidth: TEXT_STROKE_WIDTH }) < getAvailableLabelAngularSpace(d);
     }
 
     function radialTextFits(d) {
       const availableHeight = state.radiusScale(d.y0) * (state.angleScale(d.x1) - state.angleScale(d.x0));
       if (availableHeight < TEXT_FONTSIZE + TEXT_STROKE_WIDTH) return false; // not enough angular space
 
-      return measureTextWidth(nameOf(d.data).toString(), TEXT_FONTSIZE, { strokeWidth: TEXT_STROKE_WIDTH }) < getAvailableLabelRadialSpace(d);
+      return measureTextWidth(nameOf(d.data), TEXT_FONTSIZE, { strokeWidth: TEXT_STROKE_WIDTH }) < getAvailableLabelRadialSpace(d);
     }
 
     function autoPickLabelOrientation(d) {
