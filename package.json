@@ -1,5 +1,5 @@
 {
-  "name": "sunburst-chart",
+  "name": "@silimate/sunburst-chart",
   "version": "1.21.4",
   "description": "Sunburst interactive chart web component for visualizing hierarchical data",
   "license": "MIT",
@@ -27,10 +27,7 @@
     "graph",
     "svg"
   ],
-  "author": {
-    "name": "Vasco Asturiano",
-    "url": "https://github.com/vasturiano"
-  },
+  "author": "Vasco Asturiano (https://github.com/vasturiano)",
   "bugs": {
     "url": "https://github.com/vasturiano/sunburst-chart/issues"
   },
@@ -70,5 +67,8 @@
   },
   "engines": {
     "node": ">=12"
+  },
+  "directories": {
+    "example": "example"
   }
 }
